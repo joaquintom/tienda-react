@@ -19,7 +19,7 @@ function ItemCount({ stock, onAddToCart, onAddShowModal, productData }) {
   },[stock])
 
   function agregarItem() {
-    if (cantStock >= 1) {
+    if (cantStock >= 2) {
       setContador(contador + 1);
       setCantStock(cantStock - 1);
     }

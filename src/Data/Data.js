@@ -1,6 +1,6 @@
 
 import DB from '../Api/firebaseConfig'
-import {collection, getDocs} from "firebase/firestore"
+import {collection, getDocs, orderBy} from "firebase/firestore"
 
 
 const products = [
@@ -185,7 +185,7 @@ const products = [
 export async function getProducts () {
 
     // creo la referencia a la coleccion que quiero traer (productos)
-    const colRef = collection(DB, 'productos');
+    const colRef = collection(DB, 'productos', orderBy('precio'));
 
     try{
 
@@ -209,25 +209,31 @@ export async function getProducts () {
     }
 }
 
+
+export async function getProductsData (categoryId){
+
+
+
+    const colRef = collection(DB, 'productos');
+
+
+    try{
+        const snapshot = await getDocs(colRef)
     
-//Por categoria
-export const getProductsByCategory = (categoryId) => {
-    return new Promise ((resolve, reject) => {
-        setTimeout(() => {
-            resolve(products.filter(prod => prod.categoria === categoryId))
-        }, 500)
-    })
+        const productosConFormato = snapshot.docs.map((rawDoc) => {
+            return{
+              id:rawDoc.id,
+              ...rawDoc.data() 
+            }
+          });
+
+          return productosConFormato;
+ 
+        } catch (err){
+            console.log('>>> error', err)
+
+    }
 
 }
 
 
-//Por id
-export const getProductById = (id) => {
-    return new Promise ((resolve,reject) =>{
-        setTimeout(() => {
-            resolve(products.find(prod => prod.id == id))
-       }, 1000 )
-
-    })
-    
-}
