@@ -155,7 +155,7 @@ export default function Cart () {
             </Container>
                              
             
-                       { cart == "" ? (
+            { cart == "" ? (
                             <></>
                                 ) : (
                                     <div>
@@ -165,7 +165,7 @@ export default function Cart () {
                                                 <Col m={5}></Col>
                                                 
                                                 <Col m={3}>
-                                                <p className="totalCart">Total: ${totalCart}</p>
+                                                <p className="totalCart">Precio Total: ${totalCart}</p>
                                                 </Col>
                                                 
                                                 <Col m={3}>
@@ -180,7 +180,7 @@ export default function Cart () {
                                         
 
                                     </div>
-                            )}
+            )}
          
                           
         </div>   
