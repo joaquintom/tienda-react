@@ -53,8 +53,8 @@ const ItemDetail = ({id, marca, descripcion,  categoria, img, precio, stock, ini
                 
     { addedToCart ? 
       <div>
-      <Link to="/cart"><Button style={{width:'50%', margin: '10px'}}>Ir al carrito</Button></Link>
-      <Link to="/"><Button variant="outline-dark" style={{width:'50%', margin: '10px'}}>Seguir Comprando</Button></Link>
+      <Link to="/cart"><Button style={{width:'30%', margin: '10px'}}>Ir al carrito</Button></Link>
+      <Link to="/"><Button variant="outline-dark" style={{width:'30%', margin: '10px'}}>Seguir Comprando</Button></Link>
       </div>
 
       : (

@@ -73,7 +73,7 @@ export default function Cart () {
                 { cart == "" ? (
                 <div>
                 <p>El carrito está vacío.</p>
-                <Button  as={Link} to="/">Ver Productos</Button>
+                <Button as={Link} to="/">Ver Productos</Button>
                 </div>
             ) : (
                 <>
@@ -170,7 +170,7 @@ export default function Cart () {
                                                 
                                                 <Col m={3}>
                                                 <Button onClick={createOrder} variant="dark" className="btnEndBuy">
-                                                FINALIZAR COMPRA
+                                                Finalizar Compra
                                                 </Button>
                                                 </Col>
                                                     

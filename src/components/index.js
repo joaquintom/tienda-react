@@ -4,6 +4,8 @@
 import NavBar from './NavBar'
 import CartWidget from './NavBar/CartWidget/CartWidget'
 
+//Footer
+import Footer from './Footer/Footer';
 
 //List
 import Item from './List/Item/Item';
@@ -18,4 +20,4 @@ import ItemDetailContainer from './Detail/ItemDetailContainer/ItemDetailContaine
 //Cart
 import Cart from './Cart/Cart'
 
-export {NavBar, CartWidget, Item, ItemList, ItemCount, ItemListContainer, ItemDetail, ItemDetailContainer, Cart};
+export {NavBar, Footer, CartWidget, Item, ItemList, ItemCount, ItemListContainer, ItemDetail, ItemDetailContainer, Cart};
