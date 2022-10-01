@@ -11,7 +11,7 @@ function Footer () {
 
     return (
 
-        <div className="containerFooter">
+        <div className="containerFooter" id="GridAreas">
             <Col m={4}> 
                 <Link to="/">
                     <img src={logo} alt="logo climbing"/>
