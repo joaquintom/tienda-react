@@ -35,11 +35,11 @@ const ItemDetail = ({id, marca, descripcion,  categoria, img, precio, stock, ini
 
     return(
      <>
-              <Container className="productDetail">
+              <Container className="productDetail" id="GridAreas">
               <Row>
 
               <Col m={6}>
-              <Card.Img variant="top" style={{width:'70%', margin: '10px',}} src={img} />
+              <Card.Img src={img} />
               </Col>
 
               <Col m={6} className="colDetail">
