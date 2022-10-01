@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Item from "../Item/Item";
+import './ItemList.css';
 
 export default function ItemList (props)  {
 
@@ -11,14 +12,14 @@ export default function ItemList (props)  {
       <div>
          
       <Container fluid className="container">
-          <Row className="justify-content-md-center">
+          <Row>
 
          { 
          props.products.map( (product) =>{
 
          return (
 
-         <Col>
+         <Col className="itemCol">
              <Item 
              id={product.id} 
              marca={product.marca} 
