@@ -1,0 +1,228 @@
+
+
+/*mobile first*/
+
+@media (max-width: 760px){
+
+    .itemCount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnItemCount{
+        width: 30%;
+        height: 48px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:15px;
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btnItemCount .btnCal{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: rgb(74, 142, 197);
+    }
+    .btnItemCount .itemAddCont{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        text-align: center;
+        pointer-events: none;
+        font-size: 1rem;
+        font-weight: bold;
+        width: 30%;
+    }
+    
+    .comprar{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    
+    .btnComprar{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    #stockCounterLabel{
+        font-size: .8rem;
+        align-self: end;
+        margin-right: .2rem;
+        margin-bottom: .2rem;
+        color: rgb(74, 117, 197);
+    }
+    .title__modal{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .title__modal h2{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: rgb(74, 103, 197);
+    }
+    .mesage__modal{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+/* tablet*/
+
+@media (min-width: 761px) and (max-width:1023px) {
+.itemCount{
+    display: flex;
+    flex-direction: column;
+}
+.btnItemCount{
+    width: 30%;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:15px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btnItemCount .btnCal{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(74, 142, 197);
+}
+.btnItemCount .itemAddCont{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+}
+
+.comprar{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.btnComprar{
+    width: 30%;
+    border-radius: 20px;
+}
+
+#stockCounterLabel{
+    font-size: .8rem;
+    align-self: end;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+    color: rgb(74, 117, 197);
+}
+.title__modal{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.title__modal h2{
+font-size: 1.5rem;
+margin: 0 1rem;
+color: rgb(74, 103, 197);
+}
+.mesage__modal{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+}
+
+
+
+/*desktop*/
+@media (min-width:1024px){
+
+
+.itemCount{
+    display: flex;
+    flex-direction: column;
+}
+.btnItemCount{
+    width: 30%;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:15px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btnItemCount .btnCal{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(74, 142, 197);
+}
+.btnItemCount .itemAddCont{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30%;
+}
+
+.comprar{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.btnComprar{
+    width: 30%;
+    border-radius: 20px;
+}
+
+#stockCounterLabel{
+    font-size: .8rem;
+    align-self: end;
+    margin-right: .2rem;
+    margin-bottom: .2rem;
+    color: rgb(74, 117, 197);
+}
+.title__modal{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.title__modal h2{
+font-size: 1.5rem;
+margin: 0 1rem;
+color: rgb(74, 103, 197);
+}
+.mesage__modal{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+}
