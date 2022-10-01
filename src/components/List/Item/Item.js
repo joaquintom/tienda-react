@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 import './Item.css'
 
 
-function Item ({id, marca, categoria, img, precio}) {
+function Item ({id, marca, img, precio}) {
 
 
 
@@ -21,10 +21,9 @@ function Item ({id, marca, categoria, img, precio}) {
                     </Link>
                     
                     <Card.Body>
-                    
-                            <Card.Text><p>Categoria: {categoria}</p></Card.Text>
-                            <Card.Title><h2>{marca}</h2></Card.Title>
-                            <Card.Title>$ {precio}</Card.Title>
+                
+                            <Card.Title><h4>{marca}</h4></Card.Title>
+                            <Card.Title><p>$ {precio}</p></Card.Title>
 
                     </Card.Body>
                 </div>
